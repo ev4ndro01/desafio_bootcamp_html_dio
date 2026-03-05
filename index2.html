@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de cadastro</title>
+    <style>
+       
+        .row{
+            margin: 5px;
+        }
+
+        label{
+            width: 100px;
+            text-align: right;
+            display: inline-block;
+            padding-right: 5px;
+        }
+        fieldset{
+            margin-bottom: 15px;
+            margin-right: 1200px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>FORMULARIO DE CADASTRO</h1>
+    <div class="formulario">
+        <form name="Formulario de cadastro" method="POST"  autocomplete="on">
+
+            <fieldset class="1">
+                <legend>DADOS PESSOAIS</legend>
+                    <div class="row">
+                        <label>NOME:</label><input type="text">
+                        <label>EMAIL:</label><input type="email">
+                    </div>
+                    
+                    
+                    <div class="row">
+                        <label>PROFISSSAO:</label><input type="text">
+                        <label>EMPRESA:</label><input type="text">
+                    </div>
+            </fieldset>
+
+            <fieldset id="2">
+                <legend>ENDEREÇO</legend>
+                    <div class="row">
+                        <label>ENDEREÇO:</label><input type="text">
+                        <label>NUMERO:</label><input type="number">
+                    </div>
+                
+                    <div class="row">
+                        <label>BAIRRO:</label><input type="text">
+                    </div>
+                    
+                    <div class="row">
+                        <label>CIDADE/UF:</label><input type="text"> 
+                    </div>
+            </fieldset>
+            
+            <fieldset>
+                    <legend>CONTATO</legend>
+                        <div class="row">
+                            <label>CELULAR:</label><input type="text">
+                            <label>WHATSAPP: </label><input type="number">
+                        </div>
+                        
+                        <div class="row">
+                            <label>LINKEDIN:</label><input type="text">
+                            <label>GITHUB:</label><input type="text">
+                        </div>
+            </fieldset>
+            <br>
+
+            <div class="row">
+                <button type="reset">LIMPAR</button>
+                <button type="button" onclick="alert('enviando formulário')">ENVIAR FORMULARIO</button>
+            </div>
+        
+        </form>
+    </div>
+</body>
+</html>
+
